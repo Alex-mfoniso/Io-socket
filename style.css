@@ -1,5 +1,5 @@
 /* Google Fonts Link */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"); */
 
 * {
   padding: 0;
@@ -64,6 +64,7 @@ a:hover {
   padding-right: 20px;
 }
 
+/* 
 .checkbtn {
   font-size: 22px;
   color: white;
@@ -76,7 +77,7 @@ a:hover {
 
 #check {
   display: none;
-}
+} */
 
 main {
   display: flex;
@@ -171,9 +172,20 @@ main {
     padding-top: 0;
   }
 
+  .hero-text {
+    width: 100%;
+  }
+
+  .hero-p {
+    width: 100%;
+  }
+
   .hero-image {
-    max-width: 65%;
-    min-width: 40%;
+    /* max-width: 100%; */
+    min-width: 100%;
+  }
+  .hero-image img {
+    width: 100%;
   }
 
   .text {
