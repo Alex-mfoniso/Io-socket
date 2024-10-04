@@ -107,11 +107,9 @@ main {
   /* display: flex; */
   /* position: right; */
 }
-.animated-image {
+/* .animated-image {
   position: fixed;
-  /* display: block; */
-  /* max-width: 100%;
-  position: absolute; */
+
   bottom: 0;
   left: 0;
   animation: flightToRight 3s ease-in-out forwards;
@@ -124,7 +122,7 @@ main {
     transform: translate(calc(100vw - 40% - 150px), -calc(100vh - 100px));
     position: relative;
   }
-}
+} */
 .hero-image img {
   /* vertical-align: middle; */
   display: block;
@@ -158,6 +156,59 @@ main {
   padding-top: 1.5rem;
 }
 
+.slider{
+  display: flex;
+  gap: 2rem;
+  position: absolute;
+  padding: 2rem;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+ 
+
+}
+
+.card{
+  position: relative;
+  background-color: wheat;
+  width:400px;
+  height: 500px;
+  padding: 2rem;
+  flex: 0 0 300px; /* adjust the width of each card */
+  margin: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  flex-shrink: 0; /* prevent the card from shrinking */
+}
+
+.arrow-btn {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  font-size: 24px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.prev:hover, .next:hover {
+  color: #666;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .card {
+    height: auto;
+  }
+  .slider {
+    touch-action: none; /* prevent swipe gesture on mobile devices */
+  }
+}
 @media (max-width: 1050px) {
   label.logo {
     padding-left: 30px;
@@ -200,7 +251,16 @@ main {
   #hero-button {
     padding-top: 4rem;
   }
+
+  .arrow-btn {
+    display: flex;
+    justify-content: center;
+    /* margin: 20px; */
+    /* gap: 2rem; */
+  }
+  
 }
+
 
 /* Responsive media query code for small screen */
 @media (max-width: 890px) {

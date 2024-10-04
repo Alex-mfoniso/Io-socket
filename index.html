@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <title>Responsive Navbar</title>
+    <title>IO Socket</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -11,10 +11,21 @@
       href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <!-- Font Awesome Link for Icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
   </head>
 
@@ -66,11 +77,15 @@
         </div>
 
         <div class="hero-image">
-          <img src="./img/hero-image.svg" alt="" class="animated-image" />
+          <img
+            src="./img/hero-image.svg"
+            alt=""
+            class="animate__animated animate__rollIn"
+          />
         </div>
 
         <div class="hero-p">
-          <p>
+          <p class="text-slate-50">
             We deliver best-practices solutions to meet your IT needs—including
             technology, strategy, and roadmap development.
           </p>
@@ -89,13 +104,49 @@
           </p>
         </div>
 
-        <div class="arrow"></div>
-
-        <div class="card"></div>
+        <div class="arrow-btn">
+          <i class="fa-solid fa-arrow-left prev"></i>
+          <i class="fa-solid fa-arrow-right next"></i>
+        </div>
+        <div class="slider">
+          <div class="card">
+            <h2>Human resources</h2>
+            <p>
+              Hiring consultants provides businesses with specialized expertise
+              and knowledge in areas outside of their core competencies,
+              allowing them to tap into industry best practices and innovative
+              solutions.
+            </p>
+            <img src="" alt="" />
+          </div>
+          <div class="card">
+            <h2>Human resources</h2>
+            <p>
+              Hiring consultants provides businesses with specialized expertise
+              and knowledge in areas outside of their core competencies,
+              allowing them to tap into industry best practices and innovative
+              solutions.
+            </p>
+            <img src="" alt="" />
+          </div>
+          <div class="card">
+            <h2>Human resources</h2>
+            <p>
+              Hiring consultants provides businesses with specialized expertise
+              and knowledge in areas outside of their core competencies,
+              allowing them to tap into industry best practices and innovative
+              solutions.
+            </p>
+            <img src="" alt="" />
+          </div>
+          <div class="card"></div>
+          <div class="card"></div>
+          <div class="card"></div>
+        </div>
       </div>
     </div>
-
     <!-- Section for image -->
     <section></section>
   </body>
+  <script src="./app.js"></script>
 </html>
